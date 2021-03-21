@@ -1,0 +1,46 @@
+{
+  "name": "pinode-extreme",
+  "version": "0.1.0",
+  "description": "A Bitcoin block explorer for the Raspberry Pi or other small devices.",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.config.js --define process.env.NODE_ENV=\"'production'\"",
+    "start": "node ./dist/server.js --define process.env.NODE_ENV=\"'production'\"",
+    "start-dev": "webpack --config webpack.dev.config.js --watch & nodemon ./dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shadouts/PiNode.git"
+  },
+  "author": "Shadouts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Shadouts/PiNode/issues"
+  },
+  "homepage": "https://github.com/Shadouts/PiNode#readme",
+  "dependencies": {
+    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-client": "^2.6.4",
+    "apollo-link-http": "^1.5.16",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-apollo": "^3.1.3",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "graphql-tag": "^2.10.1",
+    "nodemon": "^1.19.3",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

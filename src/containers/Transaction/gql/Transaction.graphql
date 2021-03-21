@@ -1,0 +1,39 @@
+query TRANSACTION_QUERY($txid: ID!) {
+  transaction: getrawtransaction(txid: $txid) {
+    blockhash
+    blocktime
+    confirmations
+    hash
+    hex
+    in_active_chain
+    locktime
+    size
+    time
+    txid
+    version
+    vsize
+    weight
+    vin {
+      coinbase
+      sequence
+      scriptSig {
+        asm
+        hex
+      }
+      txid
+      txinwitness
+      vout
+    }
+    vout {
+      value
+      n
+      scriptPubKey {
+        addresses
+        asm
+        hex
+        reqSigs
+        type
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+query PEERS_QUERY {
+  peers: getpeerinfo {
+    id
+    addr
+    services
+    pingtime
+    version
+    subver
+    syncedBlocks: synced_blocks
+  }
+}

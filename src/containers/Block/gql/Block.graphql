@@ -1,0 +1,22 @@
+query BLOCK_QUERY($blockHash: ID!) {
+  block: getblock(blockhash: $blockHash) {
+    hash
+    confirmations
+    size
+    strippedsize
+    weight
+    height
+    version
+    versionHex
+    merkleroot
+    time
+    mediantime
+    nonce
+    bits
+    difficulty
+    chainwork
+    previousblockhash
+    nextblockhash
+    tx
+  }
+}

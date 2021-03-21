@@ -1,0 +1,24 @@
+query HOME_QUERY {
+  blockChainInfo: getblockchaininfo {
+    blocks
+    bestblockhash
+    difficulty
+    mediantime
+    chainwork
+  }
+
+  memPoolInfo: getmempoolinfo {
+    size
+    bytes
+  }
+
+  networkInfo: getnetworkinfo {
+    version
+    subversion
+    protocolversion
+    timeoffset
+    connections
+    relayfee
+    localservices
+  }
+}
