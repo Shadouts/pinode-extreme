@@ -8,7 +8,7 @@ import Root from 'Containers';
 
 const cache = new InMemoryCache();
 const link = new HttpLink({
-  uri: 'http://localhost:3000/btc-gql',
+  uri: `http://${window.location.hostname}:3000/btc-gql`,
 });
 const client = new ApolloClient({
   cache,

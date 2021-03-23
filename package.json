@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shadouts/PiNode.git"
+    "url": "git+https://github.com/Shadouts/pinode-extreme.git"
   },
   "author": "Shadouts",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Shadouts/PiNode/issues"
+    "url": "https://github.com/Shadouts/pinode-extreme/issues"
   },
-  "homepage": "https://github.com/Shadouts/PiNode#readme",
+  "homepage": "https://github.com/Shadouts/pinode-extreme",
   "dependencies": {
     "apollo-cache-inmemory": "^1.6.3",
     "apollo-client": "^2.6.4",
